@@ -6,22 +6,22 @@ function add (a,b){
 
 add(2,3);
 
-function subtract (c,d){
-    let subt = c-d;
+function subtract (a,b){
+    let subt = a-b;
     return subt;
 }
 
 subtract(3,2);
 
-function multiply(e,f){
-    let mult = e*f;
+function multiply(a,b){
+    let mult = a*b;
     return mult;
 }
 
 multiply(2,3);
 
-function division (g,h){
-    let divide = g/h;
+function division (a,b){
+    let divide = a/b;
     return divide;    
 }
 

@@ -1,36 +1,33 @@
-//Basic math operator functions
-// function add (a,b){
-//     let sum = a+b;
-//     return sum;
-// }
-
-function subtract (c,d){
-    let subt = c-d;
-    return subt;
-}
-
-function multiply(e,f){
-    let mult = e*f;
-    return mult;
-}
-
-function division (g,h){
-    let divide = g/h;
-    return divide;    
-}
-//A function that takes two numbers and operator, and calls one of the above functions
-
-function add (num1,num2){
-    let sum = num1 + num2;
+function add (a,b){
+    let sum = a+b;
     return sum;
 }
-
-function operate(num1,num2, operator){
-    num1 = 1;
-    num2 = 2; 
-    operator = document.getElementById('plus');
-    operator.addEventListener('click', function(event){
-        add(num1,num2);
-    }); 
+function subtract (a,b){
+    let subt = a-b;
+    return subt;
 }
-operate();
+function multiply(a,b){
+    let mult = a*b;
+    return mult;
+}
+function division (a,b){
+    let divide = a/b;
+    return divide;    
+}
+function operate (operator, a, b){  	
+a = 6;
+b = 2;
+  operator = ['+', '-','*', '/'];
+  let choice = operator[Math.floor(Math.random()*operator.length)];
+    if(choice == '+'){        
+        return add(a,b);
+    } else if (choice == '-'){      
+        return subtract(a,b);
+    } else if (choice == '*'){        
+        return multiply(a,b);
+    } else {    	
+      return division(a,b);
+    }
+}
+
+alert(operate());
