@@ -1,4 +1,32 @@
-#operators{
-padding: 1em;
-background-color: black;
+#digits{
+    width: 33%;
+    height: 600px;
+    border: 0.5em black solid;    
+    margin: 0em 1em 1em 1em;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:1em;
+}
+
+#digits>button{
+    margin: 1em; 
+    padding:-0.1rem;   
+}
+
+#display{
+    border: 0.3em solid;
+    border-bottom: 0em;    
+    margin:1em 1em 0em 0.5em;    
+    display: flex;
+    font-size: 30px;
+    height: 40px;
+    vertical-align: bottom;
+    position: relative;    
+    width: 33%;
+    z-index: 0;    
+}
+
+#display > span{
+    position: relative;
+    right:-400px;
 }
