@@ -1,16 +1,15 @@
 #digits{
     width: 33%;
-    height: 600px;
+    height: 500px;
     border: 0.5em black solid;    
     margin: 0em 1em 1em 1em;
     display:grid;
     grid-template-columns: repeat(4,1fr);
-    grid-gap:1em;
+    grid-gap:1em;    
 }
 
 #digits>button{
-    margin: 1em; 
-    padding:-0.1rem;   
+    background-color: cyan;     
 }
 
 #display{
@@ -23,10 +22,12 @@
     vertical-align: bottom;
     position: relative;    
     width: 33%;
-    z-index: 0;    
+    z-index: 0;  
+    background-color:yellowgreen; 
 }
 
 #display > span{
     position: relative;
-    right:-400px;
+    right:-100px;    
+    color:white;
 }

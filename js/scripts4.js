@@ -22,4 +22,22 @@ b = 2;
     }
 }
 
-alert(operate());
+//on clicking the number buttons, they should display on the screen
+let displVal = [];
+function screen (){
+    let nums = document.getElementsByClassName('numbers');
+    for(let num of nums){
+        num.addEventListener('click', function(){
+            let dispNum = parseInt(num.value);            
+            document.getElementById('display-dummy').innerHTML = dispNum;
+            displVal.push(dispNum);
+        });            
+    }
+    
+}
+
+screen();
+
+    
+
+
