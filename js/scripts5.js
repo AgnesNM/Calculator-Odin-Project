@@ -22,7 +22,7 @@ b = 2;
     }
 }
 
-//on clicking the number buttons, they should display on the screen
+//on clicking the number and operator buttons, they should display on the screen
 let displVal = [];
 function screen (){
     let nums = document.getElementsByClassName('numbers');
@@ -33,8 +33,17 @@ function screen (){
             displVal.push(dispNum);
         });            
     }
-
-    
+    function opDisp(){
+        let opNums = document.getElementsByClassName('ops');
+        for(let opNum of opNums){
+            opNum.addEventListener('click', function(){
+                let dispOp = opNum.value;            
+                document.getElementById('display-dummy').innerHTML = dispOp;
+                displVal.push(dispOp);
+            });            
+        }
+    }
+    opDisp();    
 }
 
 screen();
