@@ -46,7 +46,7 @@ function operate (operator, a, b){
             return division(a,b);
         }       
 }   
-
+//display the result of two numbers on the display area
 function equals(){
     let calculation = document.getElementById('equals');
     calculation.addEventListener('click', function(){        
